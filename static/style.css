@@ -3,3 +3,7 @@ body {
     font-family: Arial, sans-serif;
     color: #777777;
 }
+
+#movieList {
+    margin-top: 60px;
+}
