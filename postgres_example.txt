@@ -1,0 +1,23 @@
+CREATE TABLE IF NOT EXISTS movie_log (
+   entry INT PRIMARY KEY,
+   movie_id INT NOT NULL,
+   movie_name VARCHAR(255) NOT NULL,
+   movie_poster VARCHAR(255),
+   date_watched TIMESTAMP NOT NULL,
+   rating INT NOT NULL,
+   review VARCHAR(1024),
+   watched_before BINARY NOT NULL,
+   created_at TIMESTAMP NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS movie_details_cache (
+   movie_id INT PRIMARY KEY,
+   updated_at TIMESTAMP NOT NULL,
+   json_data JSONB NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS person_details_cache (
+   person_id INT PRIMARY KEY,
+   updated_at TIMESTAMP NOT NULL,
+   json_data JSONB NOT NULL
+);
