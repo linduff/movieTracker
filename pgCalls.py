@@ -22,10 +22,7 @@ def create_movie_details_cache_table(table_name):
         print(error)
 
 def insert_new_movie_into_movie_details_cache_table(movie_id, updated_at, json_data):
-    sql = """INSERT INTO movie_details_cache(movie_id, updated_at, json_data)
-             VALUES(%s, %s, %s);"""
-    
-    vendor_id = None
+    sql = """INSERT INTO movie_details_cache(movie_id, updated_at, json_data) VALUES(%s, %s, %s);"""
 
     config = load_config()
 
@@ -63,6 +60,7 @@ def query_movie_details_cache_table_ttl(movie_id):
             with  conn.cursor() as cur:
                 cur.execute(sql, movie_id)
                 print(cur.fetchone())
+                return cur.fetchone()
 
     except (Exception, psycopg2.DatabaseError) as error:
         print(error)
@@ -77,6 +75,7 @@ def query_movie_details_cache_table_json(movie_id):
             with  conn.cursor() as cur:
                 cur.execute(sql, movie_id)
                 print(cur.fetchone())
+                return cur.fetchone()
 
     except (Exception, psycopg2.DatabaseError) as error:
         print(error)
