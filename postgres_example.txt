@@ -1,10 +1,10 @@
 CREATE TABLE IF NOT EXISTS movie_log (
-   entry INT PRIMARY KEY,
+   entry SERIAL PRIMARY KEY,
    movie_id INT NOT NULL,
    movie_name VARCHAR(255) NOT NULL,
    movie_poster VARCHAR(255),
-   date_watched TIMESTAMP NOT NULL,
-   rating INT NOT NULL,
+   date_watched DATE NOT NULL,
+   rating INT,
    review VARCHAR(1024),
    watched_before BINARY NOT NULL,
    created_at TIMESTAMP NOT NULL
