@@ -1,8 +1,9 @@
 import psycopg2
-from config import load_config
 from datetime import datetime
 import json
 from pgConfig import load_config
+
+print("starting pgCalls")
 
 def create_movie_details_cache_table(table_name):
     command = """
@@ -58,30 +59,29 @@ def query_movie_details_cache_table_ttl(movie_id):
     try:
         with  psycopg2.connect(**config) as conn:
             with  conn.cursor() as cur:
-                cur.execute(sql, movie_id)
-                print(cur.fetchone())
+                cur.execute(sql, (movie_id,))
                 return cur.fetchone()
 
     except (Exception, psycopg2.DatabaseError) as error:
         print(error)
 
 def query_movie_details_cache_table_json(movie_id):
-    sql = """SELECT updated_at FROM movie_details_cache WHERE movie_id=%s;"""
+    sql = """SELECT json_data FROM movie_details_cache WHERE movie_id=%s;"""
 
     config = load_config()
 
     try:
         with  psycopg2.connect(**config) as conn:
             with  conn.cursor() as cur:
-                cur.execute(sql, movie_id)
-                print(cur.fetchone())
+                cur.execute(sql, (movie_id,))
                 return cur.fetchone()
 
     except (Exception, psycopg2.DatabaseError) as error:
         print(error)
 
-if __name__ == '__main__':
-    query_movie_details_cache_table_json(6977)
+# if __name__ == '__main__':
+#     ttl = query_movie_details_cache_table_ttl(289)[0]
+#     print((datetime.now() - ttl).total_seconds())
 #   insert_new_movie_into_movie_details_cache_table(6977, datetime.now(), json.dumps({
 #   "id": 6977,
 #   "imdb_id": "tt0477348",

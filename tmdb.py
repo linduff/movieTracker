@@ -1,13 +1,15 @@
 import requests
 import os
 from dotenv import load_dotenv
+from datetime import datetime
 import pgCalls
 
+print("starting tmdb")
 CACHE_TIME_TO_LIVE = 604800 # 1 week in seconds
 
-load_dotenv()
-
 base_url = "https://api.themoviedb.org/3/"
+
+load_dotenv()
 
 headers = {
     "accept": "application/json",
@@ -15,9 +17,12 @@ headers = {
 }
 
 def movie(movie_id):
+    print("Getting data for movie " + str(movie_id))
     if (datetime.now() - pgCalls.query_movie_details_cache_table_ttl(movie_id)).total_seconds() < CACHE_TIME_TO_LIVE:
+        print("Movie is fresh and being retrieved from cache")
         movieJson = pgCalls.query_movie_details_cache_table_json(movie_id)
     else:
+        print("Movie is stale and being fetched and updated in the cache.")
         url = base_url + "movie/" + str(movie_id) + "?language=en-US"
         response = requests.get(url, headers=headers)
         pgCalls.update_movie_details_cache_table_movie(movie_id, datetime.now(), response.json())
@@ -48,3 +53,8 @@ def top_rated_movies(page=1):
     url = base_url + "movie/top_rated?language=en-US&page=" + str(page)
     response = requests.get(url, headers=headers)
     return response.json()
+
+# if __name__ == '__main__':
+    
+
+print(popular_movies())
