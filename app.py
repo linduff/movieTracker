@@ -13,6 +13,15 @@ app = Flask(__name__)
 #     return render_template("home.html", movies = popular_movies)
 
 @app.route("/")
+def movie():
+    movieInfo = json.load(open('testFiles/movie_no_country_for_old_men.json'))
+    return render_template("movie.html", movie=movieInfo)
+
+# @app.route("/movie/<movie_id>")
+# def movie(movie_id):
+#     return render_template("movie.html", movie=tmdb.movie(movie_id))
+
+@app.route("/search")
 def search():
     searchResults = json.load(open('testFiles/searchResults_star_wars.json'))
     return render_template("search.html", searchResults=searchResults)
@@ -20,10 +29,6 @@ def search():
 # @app.route("/search/<query>")
 # def search(query):
 #     return render_template("search.html", results=jsonify(tmdb.search_movies(query)))
-
-# @app.route("/movie/<movie_id>")
-# def movie(movie_id):
-#     return render_template("movie.html", movie=tmdb.movie(movie_id))
 
 @app.route('/healthcheck')
 def health():
