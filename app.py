@@ -1,5 +1,6 @@
 from flask import Flask, render_template, jsonify
-import tmdb
+# import tmdb
+import json
 
 app = Flask(__name__)
 
@@ -10,6 +11,11 @@ app = Flask(__name__)
 def main():
     popular_movies = tmdb.popular_movies()
     return render_template("home.html", movies = popular_movies)
+
+@app.route("/search")
+def search():
+    searchResults = json.load(open('testFiles/searchResults_star_wars.json'))
+    return render_template("search.html", searchResults=searchResults)
 
 # @app.route("/search/<query>")
 # def search(query):
