@@ -19,13 +19,15 @@ headers = {
 def movie(movie_id):
     print("Getting data for movie " + str(movie_id))
     if pgCalls.query_movie_details_cache_table_json(movie_id) == None:
+        print("Movie is being fetched via the api and inserted into the cache")
         url = base_url + "movie/" + str(movie_id) + "?language=en-US"
-        movieJson = pgCalls.insert_new_movie_into_movie_details_cache_table(movie_id, datetime.now(), requests.get(url, headers=headers).json())
+        response = requests.get(url, headers=headers)
+        movieJson = pgCalls.insert_new_movie_into_movie_details_cache_table(movie_id, datetime.now(), response.json())
     elif (datetime.now() - pgCalls.query_movie_details_cache_table_ttl(movie_id)).total_seconds() < CACHE_TIME_TO_LIVE:
         print("Movie is fresh and being retrieved from cache")
         movieJson = pgCalls.query_movie_details_cache_table_json(movie_id)
     else:
-        print("Movie is stale and being fetched and updated in the cache.")
+        print("Movie is stale and being fetched via the api and updated in the cache.")
         url = base_url + "movie/" + str(movie_id) + "?language=en-US"
         response = requests.get(url, headers=headers)
         pgCalls.update_movie_details_cache_table_movie(movie_id, datetime.now(), response.json())
