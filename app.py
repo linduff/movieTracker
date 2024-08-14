@@ -4,8 +4,6 @@ import json
 
 app = Flask(__name__)
 
-# popular_movies = tmdb.movie(1022789)
-# print(popular_movies)
 
 @app.route("/")
 def main():
@@ -20,7 +18,14 @@ def movie(movie_id):
 def search():
     if request.method == 'POST':
         return render_template("search.html", searchResults=tmdb.search_movies(request.form['query']))
-    
+
+# @app.route("journal")
+# def journal():
+#     return render_template("journal.html", entries=tmdb.getJournalList())
+
+# @app.route("/cache")
+# def cache():
+#     return render_template("cache.html", cacheList=tmdb.getMovieCacheList())
 
 @app.route('/healthcheck')
 def health():
