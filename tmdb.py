@@ -18,7 +18,10 @@ headers = {
 
 def movie(movie_id):
     print("Getting data for movie " + str(movie_id))
-    if (datetime.now() - pgCalls.query_movie_details_cache_table_ttl(movie_id)).total_seconds() < CACHE_TIME_TO_LIVE:
+    if pgCalls.query_movie_details_cache_table_json(movie_id) == None:
+        url = base_url + "movie/" + str(movie_id) + "?language=en-US"
+        movieJson = pgCalls.insert_new_movie_into_movie_details_cache_table(movie_id, datetime.now(), requests.get(url, headers=headers).json())
+    elif (datetime.now() - pgCalls.query_movie_details_cache_table_ttl(movie_id)).total_seconds() < CACHE_TIME_TO_LIVE:
         print("Movie is fresh and being retrieved from cache")
         movieJson = pgCalls.query_movie_details_cache_table_json(movie_id)
     else:
@@ -57,4 +60,4 @@ def top_rated_movies(page=1):
 # if __name__ == '__main__':
     
 
-print(popular_movies())
+# print(popular_movies())

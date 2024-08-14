@@ -26,9 +26,9 @@
                             <a class="nav-link" href="javascript:void(0)">Link</a>
                         </li>
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="text" placeholder="Search">
-                        <button class="btn btn-primary" type="button">Search</button>
+                    <form class="d-flex" method="POST" action="{{ url_for('search') }}">
+                        <input class="form-control me-2" name="query" type="text" placeholder="Search">
+                        <button class="btn btn-primary" type="submit">Search</button>
                     </form>
                 </div>
             </div>
@@ -36,9 +36,9 @@
         <div class="container">
             <ul class="list-group list-group-flush">
                 {% for movie in searchResults["results"] %}
-                <a href="#" class="list-group-item list-group-item-action">
+                <a href='{{ url_for("movie", movie_id=movie["id"]) }}' class="list-group-item list-group-item-action">
                     <div class="d-flex w-100 justify-content-between">
-                        <img src="static/sw-poster.jpg" class="img-fluid" alt="..." width="50" height="80">
+                        <img src='https://image.tmdb.org/t/p/w500/{{movie["poster_path"]}}' class="img-fluid" alt="..." width="50" height="80">
                         <h5 class="mb-1">{{movie["title"]}}</h5>
                         <small>{{movie["release_date"].split("-")[0]}}</small>
                     </div>

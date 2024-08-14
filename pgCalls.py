@@ -79,20 +79,3 @@ def query_movie_details_cache_table_json(movie_id):
     except (Exception, psycopg2.DatabaseError) as error:
         print(error)
 
-# if __name__ == '__main__':
-#     ttl = query_movie_details_cache_table_ttl(289)[0]
-#     print((datetime.now() - ttl).total_seconds())
-#   insert_new_movie_into_movie_details_cache_table(6977, datetime.now(), json.dumps({
-#   "id": 6977,
-#   "imdb_id": "tt0477348",
-#   "original_language": "en",
-#   "original_title": "No Country for Old Men",
-#   "popularity": 53.273,
-#   "poster_path": "/bj1v6YKF8yHqA489VFfnQvOJpnc.jpg",
-#   "status": "Released",
-#   "tagline": "There are no clean getaways.",
-#   "title": "No Country for Old Men",
-#   "video": False,
-#   "vote_average": 7.942,
-#   "vote_count": 11700
-# }))

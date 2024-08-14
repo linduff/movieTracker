@@ -1,5 +1,5 @@
-from flask import Flask, render_template, jsonify
-# import tmdb
+from flask import Flask, render_template, jsonify, request
+import tmdb
 import json
 
 app = Flask(__name__)
@@ -7,28 +7,20 @@ app = Flask(__name__)
 # popular_movies = tmdb.movie(1022789)
 # print(popular_movies)
 
-# @app.route("/")
-# def main():
-#     popular_movies = tmdb.popular_movies()
-#     return render_template("home.html", movies = popular_movies)
-
 @app.route("/")
-def movie():
-    movieInfo = json.load(open('testFiles/movie_no_country_for_old_men.json'))
-    return render_template("movie.html", movie=movieInfo)
+def main():
+    popular_movies = tmdb.popular_movies()
+    return render_template("home.html", movies = popular_movies)
 
-# @app.route("/movie/<movie_id>")
-# def movie(movie_id):
-#     return render_template("movie.html", movie=tmdb.movie(movie_id))
+@app.route("/movie/<movie_id>")
+def movie(movie_id):
+    return render_template("movie.html", movie=tmdb.movie(movie_id))
 
-@app.route("/search")
+@app.route("/search", methods=['POST'])
 def search():
-    searchResults = json.load(open('testFiles/searchResults_star_wars.json'))
-    return render_template("search.html", searchResults=searchResults)
-
-# @app.route("/search/<query>")
-# def search(query):
-#     return render_template("search.html", results=jsonify(tmdb.search_movies(query)))
+    if request.method == 'POST':
+        return render_template("search.html", searchResults=tmdb.search_movies(request.form['query']))
+    
 
 @app.route('/healthcheck')
 def health():
