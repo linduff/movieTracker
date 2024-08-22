@@ -1,0 +1,398 @@
+{
+    "page": 1,
+    "results": [
+      {
+        "adult": false,
+        "backdrop_path": "/jNjT5y95BToczcxgVPl1NBB7goY.jpg",
+        "genre_ids": [
+          12,
+          28,
+          878
+        ],
+        "id": 11,
+        "original_language": "en",
+        "original_title": "Star Wars",
+        "overview": "Princess Leia is captured and held hostage by the evil Imperial forces in their effort to take over the galactic Empire. Venturesome Luke Skywalker and dashing captain Han Solo team together with the loveable robot duo R2-D2 and C-3PO to rescue the beautiful princess and restore peace and justice in the Empire.",
+        "popularity": 92.579,
+        "poster_path": "/6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg",
+        "release_date": "1977-05-25",
+        "title": "Star Wars",
+        "video": false,
+        "vote_average": 8.203,
+        "vote_count": 20329
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/m4F1KRK5jAoQHi2mKDFE2jFKEIb.jpg",
+        "genre_ids": [
+          28,
+          12,
+          878
+        ],
+        "id": 188927,
+        "original_language": "en",
+        "original_title": "Star Trek Beyond",
+        "overview": "The USS Enterprise crew explores the furthest reaches of uncharted space, where they encounter a mysterious new enemy who puts them and everything the Federation stands for to the test.",
+        "popularity": 49.607,
+        "poster_path": "/yOnd3XQIg7JBmu0UuBjZyLdsxQD.jpg",
+        "release_date": "2016-07-07",
+        "title": "Star Trek Beyond",
+        "video": false,
+        "vote_average": 6.783,
+        "vote_count": 6520
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/q7M0JpPixbEYT8EhnI7wTEMONxz.jpg",
+        "genre_ids": [
+          878,
+          28,
+          12
+        ],
+        "id": 13475,
+        "original_language": "en",
+        "original_title": "Star Trek",
+        "overview": "The fate of the galaxy rests in the hands of bitter rivals. One, James Kirk, is a delinquent, thrill-seeking Iowa farm boy. The other, Spock, a Vulcan, was raised in a logic-based society that rejects all emotion. As fiery instinct clashes with calm reason, their unlikely but powerful partnership is the only thing capable of leading their crew through unimaginable danger, boldly going where no one has gone before. The human adventure has begun again.",
+        "popularity": 53.27,
+        "poster_path": "/lV5OpzAss1z06YNagOVap1I35mH.jpg",
+        "release_date": "2009-05-06",
+        "title": "Star Trek",
+        "video": false,
+        "vote_average": 7.4,
+        "vote_count": 9731
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/di4AXsV7tLj0EN0s9hby1NzGq9X.jpg",
+        "genre_ids": [
+          10751
+        ],
+        "id": 903746,
+        "original_language": "de",
+        "original_title": "Lauras Stern",
+        "overview": "A new chapter begins for Laura: Together with her parents and her brother Tommy, she moves to a new home. But at first the girl can't really get used to the new city and has difficulties making friends and socializing. One evening she watches a star fall from the sky. Laura rushes to the injured star's aid and takes care of him. The two become friends and the star takes Laura on many exciting adventures.",
+        "popularity": 16.635,
+        "poster_path": "/b8IzZpK8LZggHRMQ1xUhDca0XWk.jpg",
+        "release_date": "2021-12-09",
+        "title": "Laura's Star",
+        "video": false,
+        "vote_average": 6.4,
+        "vote_count": 6
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/rPJzSvaOcssRPegJkKS7UVa8Ib3.jpg",
+        "genre_ids": [
+          18
+        ],
+        "id": 1230097,
+        "original_language": "ta",
+        "original_title": "ப்ளூ ஸ்டார்",
+        "overview": "The captains of two rival village cricket teams must put their longstanding grudge aside in order to take on the bullies threatening their right to play.",
+        "popularity": 3.193,
+        "poster_path": "/8agxJ2Wv8EitO1xwF2HgxnyloCI.jpg",
+        "release_date": "2024-01-25",
+        "title": "Blue Star",
+        "video": false,
+        "vote_average": 7.333,
+        "vote_count": 3
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/npDrIM6ZbuD7nUxI7ZzNBxs4IRF.jpg",
+        "genre_ids": [
+          28,
+          12,
+          878
+        ],
+        "id": 54138,
+        "original_language": "en",
+        "original_title": "Star Trek Into Darkness",
+        "overview": "When the crew of the Enterprise is called back home, they find an unstoppable force of terror from within their own organization has detonated the fleet and everything it stands for, leaving our world in a state of crisis.  With a personal score to settle, Captain Kirk leads a manhunt to a war-zone world to capture a one man weapon of mass destruction. As our heroes are propelled into an epic chess game of life and death, love will be challenged, friendships will be torn apart, and sacrifices must be made for the only family Kirk has left: his crew.",
+        "popularity": 39.019,
+        "poster_path": "/7XrRkhMa9lQ71RszzSyVrJVvhyS.jpg",
+        "release_date": "2013-05-05",
+        "title": "Star Trek Into Darkness",
+        "video": false,
+        "vote_average": 7.329,
+        "vote_count": 8968
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/tVlYe8QzzcWu6PsTtjxhlpKOhY.jpg",
+        "genre_ids": [
+          35,
+          10749
+        ],
+        "id": 551572,
+        "original_language": "pt",
+        "original_title": "Tudo por um Pop Star",
+        "overview": "The pop band Slavabody Disco Disco Boys, a fever among girls from all over Brazil, announces that it will play in Rio de Janeiro. Gabi, Manu and Ritinha will do everything they can to watch the show far from the city where they live.",
+        "popularity": 6.495,
+        "poster_path": "/8SAAmvqFqYgO5AjKQLrvy4RozDM.jpg",
+        "release_date": "2018-10-11",
+        "title": "Everything For A Pop Star",
+        "video": false,
+        "vote_average": 7.1,
+        "vote_count": 82
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/wygUDDRNpeKUnkekRGeLCZM93tA.jpg",
+        "genre_ids": [
+          878,
+          28,
+          12,
+          53
+        ],
+        "id": 199,
+        "original_language": "en",
+        "original_title": "Star Trek: First Contact",
+        "overview": "The Borg, a relentless race of cyborgs, are on a direct course for Earth. Violating orders to stay away from the battle, Captain Picard and the crew of the newly-commissioned USS Enterprise E pursue the Borg back in time to prevent the invaders from changing Federation history and assimilating the galaxy.",
+        "popularity": 28.251,
+        "poster_path": "/vrC1lkTktFQ4AqBfqf4PXoDDLcw.jpg",
+        "release_date": "1996-11-22",
+        "title": "Star Trek: First Contact",
+        "video": false,
+        "vote_average": 7.297,
+        "vote_count": 1720
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/kBBr0l2sVaLvJhjIE3uFqzvpFeT.jpg",
+        "genre_ids": [
+          16,
+          10751
+        ],
+        "id": 12697,
+        "original_language": "de",
+        "original_title": "Lauras Stern",
+        "overview": "Laura sees a shooting star falling to earth and finds it in a park, down on the floor and with a broken point. The star is a living being, and Laura takes her home to reattach its point with a band-aid. The little star has special powers and can make people fly, or bring inanimate objects to life. But the more she stays on Earth, the weaker she becomes and her colors fade away and her powers start to fail. Laura must find a way to send the little star back into outer space.",
+        "popularity": 11.619,
+        "poster_path": "/unNN6JJCghbDOMn3plonB6YsjnA.jpg",
+        "release_date": "2004-09-19",
+        "title": "Laura's Star",
+        "video": false,
+        "vote_average": 6.349,
+        "vote_count": 43
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/viPfna8tjU7eEI4GMBGGNMXlx0h.jpg",
+        "genre_ids": [
+          10402,
+          18
+        ],
+        "id": 1160878,
+        "original_language": "es",
+        "original_title": "La estrella azul",
+        "overview": "The 90s. A famous Spanish rock star travels around Latin America in the endeavour to reconnect with his vocation. There he meets an old musician down on his luck, prompting the birth of an unlikely duo with every chance of becoming an epic commercial failure.",
+        "popularity": 14.416,
+        "poster_path": "/wiOJMisF5bXFuygrHayEYYrPZRS.jpg",
+        "release_date": "2024-02-23",
+        "title": "The Blue Star",
+        "video": false,
+        "vote_average": 7.132,
+        "vote_count": 19
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/uBDZLFiUD1woKhX6WfqSQ8JTrCX.jpg",
+        "genre_ids": [
+          27,
+          53
+        ],
+        "id": 39863,
+        "original_language": "ja",
+        "original_title": "堕靡泥の星　美少女狩り",
+        "overview": "The film portrays the life of Tatsuya, a young man of proper descent whose outward respectability hides his urges for rape and torture. This handsome rapist seduces women, then brings them to the basement of the mansion he inherited from his well-to-do parents, where he indulges in lengthy sessions of sado-sexual violence. Based on manga by Masaaki Sato.",
+        "popularity": 20.794,
+        "poster_path": "/3n029M1rCF51hG24sq18D3lMtTw.jpg",
+        "release_date": "1979-10-27",
+        "title": "Star of David: Beauty Hunting",
+        "video": false,
+        "vote_average": 6.3,
+        "vote_count": 44
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/nCRLG0OzsP4U5IddWCIZzDoAWLA.jpg",
+        "genre_ids": [
+          18,
+          10749
+        ],
+        "id": 1276338,
+        "original_language": "ta",
+        "original_title": "ஸ்டார்",
+        "overview": "Follows a youngster Kalai and his aspirations of becoming a 'Star' in the Tamil Film Industry. Born in a lower-middle-class family, will Kalai overcome all his struggles to emerge as a Star?",
+        "popularity": 11.641,
+        "poster_path": "/c74qjGjs6XEKYDTYc1bxRzRkigT.jpg",
+        "release_date": "2024-05-10",
+        "title": "Star",
+        "video": false,
+        "vote_average": 7.6,
+        "vote_count": 76
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/iYtlR7AgExER2f7XzyHAb7e7H5M.jpg",
+        "genre_ids": [
+          18,
+          36
+        ],
+        "id": 253281,
+        "original_language": "es",
+        "original_title": "Stella cadente",
+        "overview": "During a brief rule towards the end of the 19th century, the Italian duke Amadeo of Savoy occupied the Spanish throne. However, confined to the safety of life within the palace walls, the lonely, frustrated king and his servants succumb to playful adventures focused more on pleasure than his duties.",
+        "popularity": 2.131,
+        "poster_path": "/vPAQ3HYEnsKJThr2s1ibyJlq2Gt.jpg",
+        "release_date": "2014-01-26",
+        "title": "Falling Star",
+        "video": false,
+        "vote_average": 6.2,
+        "vote_count": 15
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/k6EOrckWFuz7I4z4wiRwz8zsj4H.jpg",
+        "genre_ids": [
+          12,
+          28,
+          878
+        ],
+        "id": 140607,
+        "original_language": "en",
+        "original_title": "Star Wars: The Force Awakens",
+        "overview": "Thirty years after defeating the Galactic Empire, Han Solo and his allies face a new threat from the evil Kylo Ren and his army of Stormtroopers.",
+        "popularity": 66.798,
+        "poster_path": "/wqnLdwVXoBjKibFRR5U3y0aDUhs.jpg",
+        "release_date": "2015-12-15",
+        "title": "Star Wars: The Force Awakens",
+        "video": false,
+        "vote_average": 7.277,
+        "vote_count": 19126
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/6z9w8eidKWDDXwZNSVNaRolAYEP.jpg",
+        "genre_ids": [
+          878,
+          28,
+          12,
+          53
+        ],
+        "id": 201,
+        "original_language": "en",
+        "original_title": "Star Trek: Nemesis",
+        "overview": "En route to the honeymoon of William Riker to Deanna Troi on her home planet of Betazed, Captain Jean-Luc Picard and the crew of the U.S.S. Enterprise receives word from Starfleet that a coup has resulted in the installation of a new Romulan political leader, Shinzon, who claims to seek peace with the human-backed United Federation of Planets. Once in enemy territory, the captain and his crew make a startling discovery: Shinzon is human, a slave from the Romulan sister planet of Remus, and has a secret, shocking relationship to Picard himself.",
+        "popularity": 20.217,
+        "poster_path": "/cldAwhvBmOv9jrd3bXWuqRHoXyq.jpg",
+        "release_date": "2002-12-13",
+        "title": "Star Trek: Nemesis",
+        "video": false,
+        "vote_average": 6.298,
+        "vote_count": 1386
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/osHpQQ5rcbmH41I4LQlPlprRGpk.jpg",
+        "genre_ids": [
+          18,
+          10751
+        ],
+        "id": 125225,
+        "original_language": "hi",
+        "original_title": "Star",
+        "overview": "Dev Kumar Verma comes from a middle-class family and must find employment to support his dad and mom. Dev, however, has set his mind upon becoming a music sensation like Elvis Presley. He loses his job because of this, and refuses to work until and unless he gets a job to his liking, much to the dismay of his parents and his brother, Shiv Kumar. Dev does get employment at Charlie's Disco, where he meets with Maya and falls in love with her.  When Charlie's Disco's competitor, Rana, finds out about Dev, he wants to hire Dev, but Dev decides to continue to work with Charlie's Disco, as a result Dev and Charlie get a beating by Rana's men, and Dev is unable to sing. After recuperating, Dev is devastated to find out that Maya and Shiv Kumar are in love with each other. What impact will this have on Dev and his brother on one hand, and what of his career in music?",
+        "popularity": 5.928,
+        "poster_path": "/pU7oXmVdNPrzj2XOGIQ6ciMnH42.jpg",
+        "release_date": "1982-10-22",
+        "title": "Star",
+        "video": false,
+        "vote_average": 5.856,
+        "vote_count": 59
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/jn52me8AagfNt7r84SgQbV0R9ZG.jpg",
+        "genre_ids": [
+          12,
+          28,
+          878
+        ],
+        "id": 181812,
+        "original_language": "en",
+        "original_title": "Star Wars: The Rise of Skywalker",
+        "overview": "The surviving Resistance faces the First Order once again as the journey of Rey, Finn and Poe Dameron continues. With the power and knowledge of generations behind them, the final battle begins.",
+        "popularity": 50.802,
+        "poster_path": "/db32LaOibwEliAmSL2jjDF6oDdj.jpg",
+        "release_date": "2019-12-18",
+        "title": "Star Wars: The Rise of Skywalker",
+        "video": false,
+        "vote_average": 6.324,
+        "vote_count": 9710
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/epVMXf10WqFkONzKR8V76Ypj5Y3.jpg",
+        "genre_ids": [
+          12,
+          28,
+          878
+        ],
+        "id": 181808,
+        "original_language": "en",
+        "original_title": "Star Wars: The Last Jedi",
+        "overview": "Rey develops her newly discovered abilities with the guidance of Luke Skywalker, who is unsettled by the strength of her powers. Meanwhile, the Resistance prepares to do battle with the First Order.",
+        "popularity": 80.903,
+        "poster_path": "/kOVEVeg59E0wsnXmF9nrh6OmWII.jpg",
+        "release_date": "2017-12-13",
+        "title": "Star Wars: The Last Jedi",
+        "video": false,
+        "vote_average": 6.798,
+        "vote_count": 15042
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/427l6SvKGY3JLKnwOpG5fnCAfV7.jpg",
+        "genre_ids": [
+          16,
+          878,
+          10749
+        ],
+        "id": 37910,
+        "original_language": "ja",
+        "original_title": "ほしのこえ",
+        "overview": "It is 2046 when a mysterious alien force begins their annihilation of the human race. Leaving behind the one person she loves, Mikako joins the interstellar battle as a pilot. And so - while Mikako risks her life to save mankind - Noboru waits. The two lovers, worlds apart, desperately strive to remain connected as the gap between them widens at a frightening pace.",
+        "popularity": 14.594,
+        "poster_path": "/mvRqW2z4iBws3CDkCNmojksyr4V.jpg",
+        "release_date": "2002-02-02",
+        "title": "Voices of a Distant Star",
+        "video": false,
+        "vote_average": 6.527,
+        "vote_count": 294
+      },
+      {
+        "adult": false,
+        "backdrop_path": "/A2owp1CjaOzAxnPwzQoovtJFBcT.jpg",
+        "genre_ids": [
+          14,
+          12,
+          10751
+        ],
+        "id": 149427,
+        "original_language": "no",
+        "original_title": "Reisen til julestjernen",
+        "overview": "13 year old kind-hearted Sonja arrives at a tiny village together with a company of bandits. But there is a curse on the village. A long time ago, the King’s only daughter Goldhair disappeared while searching for the Christmas Star. The Queen died of a broken heart, leaving the shattered King all on his own. From that day on, the King cursed the Christmas Star, thereby causing darkness and grief to descend upon the land. However, an old sage has revealed that Goldhair is still alive, and will return only if the King finds the way back to the Christmas Star. Ever since, the King has been searching for the Christmas Star every Christmas, but all in vain.",
+        "popularity": 11.921,
+        "poster_path": "/ysqFnW2TrlD6W9H9dn1FLgVhpsq.jpg",
+        "release_date": "2012-11-09",
+        "title": "Journey to the Christmas Star",
+        "video": false,
+        "vote_average": 5.973,
+        "vote_count": 169
+      }
+    ],
+    "total_pages": 115,
+    "total_results": 2296
+  }
