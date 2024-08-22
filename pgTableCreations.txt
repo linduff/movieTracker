@@ -1,23 +1,17 @@
-CREATE TABLE IF NOT EXISTS movie_log (
-   entry SERIAL PRIMARY KEY,
-   movie_id INT NOT NULL,
-   movie_name VARCHAR(255) NOT NULL,
-   movie_poster VARCHAR(255),
-   date_watched DATE NOT NULL,
-   rating INT,
-   review VARCHAR(1024),
-   watched_before BINARY NOT NULL,
-   created_at TIMESTAMP NOT NULL
-);
-
-CREATE TABLE IF NOT EXISTS movie_details_cache (
-   movie_id INT PRIMARY KEY,
-   updated_at TIMESTAMP NOT NULL,
-   json_data JSONB NOT NULL
-);
-
-CREATE TABLE IF NOT EXISTS person_details_cache (
-   person_id INT PRIMARY KEY,
-   updated_at TIMESTAMP NOT NULL,
-   json_data JSONB NOT NULL
-);
+- Remove current movie_details_cache table manually
+- Create all tables (single function in pgCalls)
+	- movie_details_cache
+	- movie_collections
+	- movie_genres
+	- movie_origin_countries
+	- movie_production_companies
+	- movie_production_countries
+	- movie_spoken_languages
+	- movie_log
+- Fix insert and update logic for movie_details_cache table
+	- Add input parameters for insert (pgCalls)
+	- Add input parameters for update (pgCalls)
+	- Add input parameters for insert (tmdb)
+	- Add input parameters for update (tmdb)
+- Add insert logic for sub tables (pgCalls)
+- Add query logic for sub tables (pgCalls)

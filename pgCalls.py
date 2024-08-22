@@ -5,6 +5,19 @@ from pgConfig import load_config
 
 print("starting pgCalls")
 
+create_movie_log_table = """
+CREATE TABLE IF NOT EXISTS movie_log (
+	log_id SERIAL PRIMARY KEY,
+	movie_id INT,
+	created_at TIMESTAMP NOT NULL,
+	title TEXT,
+	rating INT,
+	comments TEXT,
+	watch_date TEXT,
+	tage TEXT[]
+)
+"""
+
 create_movie_details_cache_table = """
 CREATE TABLE IF NOT EXISTS movie_details_cache (
 	movie_id INT PRIMARY KEY,
